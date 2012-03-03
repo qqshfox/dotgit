@@ -1,6 +1,8 @@
-.PHONY: all install clean
+.PHONY: all update install clean
 
 all:
+
+update:
 
 current_path=$(shell pwd)
 install: all

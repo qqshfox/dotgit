@@ -1,0 +1,11 @@
+.DS_Store
+*~
+*.swp
+*.beam
+*.pyc
+*.o
+tags
+cscope.files
+cscope.out
+*.dump
+core

@@ -1,0 +1,23 @@
+[user]
+	name = Hanfei Shen
+	email = qqshfox@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	cob = checkout -b
+	cot = checkout -t
+	br = branch
+	di = diff
+	dic = diff --cached
+	glog = log --graph
+	slog = log --stat
+	plog = log --patch
+	gr = grep -nH
+	nffmg = merge --no-ff
+	pl = pull --rebase
+	sbr = show-branch
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore

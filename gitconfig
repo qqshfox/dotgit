@@ -3,20 +3,34 @@
 	email = hanfei.shen@saybot.com
 [alias]
 	st = status
+	a = add
 	ci = commit
 	co = checkout
 	cob = checkout -b
 	cot = checkout -t
 	br = branch
+	brd = branch -d
+	brD = branch -D
+	brm = branch -m
 	di = diff
 	dic = diff --cached
-	glog = log --graph
-	slog = log --stat
-	plog = log --patch
+	l = log
+	lg = log --graph --decorate
+	ls = log --stat
+	lp = log --patch
 	gr = grep -nH
-	nffmg = merge --no-ff
+	mg = merge
+	nff = merge --no-ff
 	pl = pull --rebase
+	pu = push
+	puf = push -f
 	sbr = show-branch
+	sth = stash
+	stp = stash pop
+	stl = stash list
+	stc = stash clear
+	desc = describe
+	wc = whatchanged
 [color]
 	ui = auto
 [core]

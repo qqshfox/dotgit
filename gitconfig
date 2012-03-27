@@ -1,6 +1,7 @@
 [user]
 	name = Hanfei Shen
 	email = qqshfox@gmail.com
+	signingkey = B0D2588A
 [alias]
 	st = status
 	a = add

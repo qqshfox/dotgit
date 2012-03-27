@@ -14,7 +14,7 @@
 	brm = branch -m
 	di = diff
 	dic = diff --cached
-	l = log
+	l = log --decorate
 	lg = log --graph --decorate
 	ls = log --stat
 	lp = log --patch

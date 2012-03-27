@@ -1,6 +1,7 @@
 [user]
 	name = Hanfei Shen
 	email = hanfei.shen@saybot.com
+	signingkey = DBD8E200
 [alias]
 	st = status
 	a = add

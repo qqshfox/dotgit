@@ -22,6 +22,7 @@
 	gr = grep -nH
 	mg = merge
 	nff = merge --no-ff
+	mt = mergetool --no-prompt
 	pl = pull --rebase
 	pu = push
 	puf = push -f
@@ -36,3 +37,8 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore
+[merge]
+    tool = splice
+[mergetool "splice"]
+    cmd = "mvim -v $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+    trustExitCode = true

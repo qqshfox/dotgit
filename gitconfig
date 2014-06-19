@@ -39,9 +39,14 @@
 	excludesfile = ~/.gitignore
 [merge]
     tool = splice
+	defaultToUpstream = true
 [mergetool "splice"]
     cmd = "mvim -v $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
     trustExitCode = true
 ;[http]
 ;    proxy = http://localhost:8087
 ;    sslVerify = false
+[diff]
+	algorithm = patience
+[push]
+	default = simple

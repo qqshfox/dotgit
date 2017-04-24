@@ -16,7 +16,7 @@
 	di = diff
 	dic = diff --cached
 	l = log --decorate
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ls = log --stat
 	lp = log --patch
 	gr = grep -nH
@@ -33,19 +33,20 @@
 	stc = stash clear
 	desc = describe
 	wc = whatchanged
+	lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim
+	quotepath = false
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [merge]
-    tool = splice
+	tool = splice
 	defaultToUpstream = true
 [mergetool "splice"]
-    cmd = "mvim -v $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
-    trustExitCode = true
-;[http]
-;    proxy = http://localhost:8087
-;    sslVerify = false
+	cmd = "vim $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+	trustExitCode = true
 [diff]
 	algorithm = patience
 [push]

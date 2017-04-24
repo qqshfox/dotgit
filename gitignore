@@ -8,4 +8,4 @@ tags
 cscope.files
 cscope.out
 *.dump
-core
+*.tern-port

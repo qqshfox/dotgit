@@ -40,7 +40,7 @@
 	excludesfile = ~/.gitignore
 	editor = vim
 	quotepath = false
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 [merge]
 	tool = splice
 	defaultToUpstream = true
@@ -51,3 +51,5 @@
 	algorithm = patience
 [push]
 	default = simple
+[delta]
+	features = side-by-side line-numbers decorations
